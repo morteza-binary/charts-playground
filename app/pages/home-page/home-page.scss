@@ -1,0 +1,33 @@
+.bold {
+    font-weight: bold;
+}
+
+#tradeContractChart {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+.toolbar {
+    .toolbar-background {
+        border-color: #2a3052;
+        background-color: #2a3052;
+        background-image: none;
+        border-bottom: 3px solid #e98024 !important;
+    }
+    .toolbar-title{
+        overflow: visible !important;
+    }
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+
+    .toolbar-content{
+        img {
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<ion-list>
+    <ion-item>
+        <ion-label> Market </ion-label>
+        <ion-select [ngModel]="selected.market" (ngModelChange)="changeMarket($event)">
+            <ion-option *ngFor="let m of marketsList" [value]="m.name" [class.bold]="!m.isSub"> {{ m.isSub? "&nbsp;&nbsp;&nbsp;&nbsp;" + m.name:  m.name }} </ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label> Underlying </ion-label>
+        <ion-select [ngModel]="underlying" (ngModelChange)="changeUnderlying($event)">
+            <ion-option *ngFor="let s of underlyings" [value]="s.name"> {{ s.displayName }} </ion-option>
+        </ion-select>
+    </ion-item>
+</ion-list>

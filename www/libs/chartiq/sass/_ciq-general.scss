@@ -1,0 +1,62 @@
+
+/* --------------------------------------------------------- GENERAL --------------------------------------------------------- */
+
+body {
+	-ms-touch-action: none;
+	@include user-select(none);
+	overflow:hidden;
+	height:100%;
+	background:$DEFAULT-bg;
+	color: $DEFAULT-text-medium;
+	font-family:$base-font;
+	font-size: $font-size-base;
+	font-weight:300;
+	padding:0;
+	width:100%;
+}
+
+input {
+	@include user-select(text);
+	font-weight: 300;
+	color: #071931;
+}
+
+div, li, span, a {
+	@include user-select(none);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+  
+a {color:$DEFAULT-accent}
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+section {
+	display:block;
+	margin-bottom:20px;
+	padding:20px;
+}
+
+h1 {font-weight:100;}
+
+.thin {font-weight:100} 	/* Regular */
+.light {font-weight:300} 	/* Regular and Condensed*/
+.normal {font-weight:400}	/* Regular and Condensed*/
+.medium {font-weight:500}	/* Regular */
+.bold {font-weight:700} 	/* Regular and Condensed*/
+
+input[type="text"], 
+input[type="number"] {
+	border: $DEFAULT-border-subtle solid 1px;
+	padding: 0 5px 0 10px;
+}
+
+.stx_xaxis, .stx_yaxis {
+	font-family: $base-font;
+}
+
+.stx_line_chart {
+	width: 2px;
+}

@@ -1,0 +1,12 @@
+<ion-navbar *navbar>
+  <ion-title>
+      <img src="binary-symbol-logo.svg"/>
+      <img src="binary.svg"/>
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding class="page1">
+  <h2>Welcome to Ionic!</h2>
+  <market [(selected)]="selected"></market>
+  <chart [(underlying)]="selected.underlying"></chart>
+</ion-content>

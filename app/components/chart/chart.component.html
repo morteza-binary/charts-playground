@@ -1,0 +1,22 @@
+<ion-list>
+    <ion-item>
+        <ion-label> Charts </ion-label>
+        <ion-select [ngModel]="chartConfig.chartType" (ngModelChange)="setChartType($event)">
+            <ion-option value="candle" selected> Candle </ion-option>
+            <ion-option value="line"> Line </ion-option>
+            <ion-option value="bar"> Bar </ion-option>
+            <ion-option value="mountain"> Mountain </ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label> Crosshairs </ion-label>
+        <ion-checkbox dark [ngModel]="chartConfig.crosshairs" (ngModelChange)="setCrosshairs($event)"></ion-checkbox>
+    </ion-item>
+</ion-list>
+
+<div class="contract-chart">
+	<div id="chartContainer">
+        <div id="tradeContractChart">
+        </div>
+    </div>
+</div>
